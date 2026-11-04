@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecipePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--navigation-->
+      <nav class="navigation">
+        <div class="menu-container">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="recipe-detail.html">RECIPES</a></li>
+            <li><a href="search.html">SEARCH</a></li>
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="nutrisafe.html">NUTRISAFE</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!--hero-->
+      <div class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h6>#1 Bender's most shiny recipe</h6>
+            <h4>Boozy brown</h4>
+            <h4>Lentil soup</h4>
+            <h6>40% Healthy</h6>
+          </div>
+
+          <div class="hero-search">
+            <div class="search-box">
+              <span class="search-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    d="M14.385 15.446a6.75 6.75 0 1 1 1.06-1.061l5.156 5.155a.75.75 0 0 1-1.06 1.06zm-7.926-1.562a5.25 5.25 0 1 1 7.43-.005"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <input type="text" placeholder="search" class="search-input" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Todays Recipes-->
+      <section class="todays_recipes">
+        <div class="todays_recipes_headline">Today's Recipes</div>
+        <div class="todays_recipes_content">
+          <!-- Card 1 -->
+          <div class="todays_recipes_content_block">
+            <div class="todays_recipes_content_block_image">
+              <img
+                src="https://picsum.photos/id/1080/400/300"
+                alt="Food image"
+              />
+            </div>
+            <div class="todays_recipes_content_block_text">
+              <div class="todays_recipes_content_block_text_top">
+                <h5>Foodname</h5>
+                <p>Lorem ipsum text goes here.</p>
+              </div>
+              <div class="todays_recipes_content_block_text_bottom">
+                <div
+                  data-category="Seafood"
+                  class="todays_recipes_content_bottom_area"
+                >
+                  <div class="todays_recipes_content_bottom_area_left">
+                    <p data-category="Seafood" id="category-Seafood">Seafood</p>
+                    <p>Recipe</p>
+                  </div>
+                  <div class="todays_recipes_content_bottom_area_right">
+                    <div
+                      class="todays_recipes_content_bottom_area_right_button"
+                    >
+                      <button><a href="#">How to</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="todays_recipes_content_block">
+            <div class="todays_recipes_content_block_image">
+              <img
+                src="https://picsum.photos/id/1025/400/300"
+                alt="Food image"
+              />
+            </div>
+            <div class="todays_recipes_content_block_text">
+              <div class="todays_recipes_content_block_text_top">
+                <h5>Foodname</h5>
+                <p>Lorem ipsum text goes here.</p>
+              </div>
+              <div class="todays_recipes_content_block_text_bottom">
+                <div
+                  data-category="dessert"
+                  class="todays_recipes_content_bottom_area"
+                >
+                  <div class="todays_recipes_content_bottom_area_left">
+                    <p data-category="dessert" id="category-dessert">
+                      Desserts
+                    </p>
+                    <p>Recipe</p>
+                  </div>
+                  <div class="todays_recipes_content_bottom_area_right">
+                    <div
+                      class="todays_recipes_content_bottom_area_right_button"
+                    >
+                      <button><a href="#">How to</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="todays_recipes_content_block">
+            <div class="todays_recipes_content_block_image">
+              <img
+                src="https://picsum.photos/id/292/400/300"
+                alt="Food image"
+              />
+            </div>
+            <div class="todays_recipes_content_block_text">
+              <div class="todays_recipes_content_block_text_top">
+                <h5>Foodname</h5>
+                <p>Lorem ipsum text goes here.</p>
+              </div>
+              <div class="todays_recipes_content_block_text_bottom">
+                <div
+                  data-category="Chicken"
+                  class="todays_recipes_content_bottom_area"
+                >
+                  <div class="todays_recipes_content_bottom_area_left">
+                    <p data-category="Chicken">Chicken</p>
+                    <p>Recipe</p>
+                  </div>
+                  <div class="todays_recipes_content_bottom_area_right">
+                    <div
+                      class="todays_recipes_content_bottom_area_right_button"
+                    >
+                      <button><a href="#">How to</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="todays_recipes_content_block">
+            <div class="todays_recipes_content_block_image">
+              <img
+                src="https://picsum.photos/id/1060/400/300"
+                alt="Food image"
+              />
+            </div>
+            <div class="todays_recipes_content_block_text">
+              <div class="todays_recipes_content_block_text_top">
+                <h5>Foodname</h5>
+                <p>Lorem ipsum text goes here.</p>
+              </div>
+              <div class="todays_recipes_content_block_text_bottom">
+                <div
+                  data-category="Veg"
+                  class="todays_recipes_content_bottom_area"
+                >
+                  <div class="todays_recipes_content_bottom_area_left">
+                    <p data-category="Veg">Vegetarian</p>
+                    <p>Recipe</p>
+                  </div>
+                  <div class="todays_recipes_content_bottom_area_right">
+                    <div
+                      class="todays_recipes_content_bottom_area_right_button"
+                    >
+                      <button><a href="#">How to</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--categories-->
+      <section class="categories">
+        <div class="todays_recipes_headline">Categories</div>
+        <div class="categories_content">
+          <div class="categories_content_block">
+            <span class="iconify" data-category="Seafood">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M16 10a1 1 0 1 0 0 2a1 1 0 1 0 0-2"
+                />
+                <path
+                  fill="currentColor"
+                  d="M1.99 15v2c1.29 0 3.41-.58 4.43-2.48C7.7 16.11 9.97 18 13.5 18c5.95 0 8.32-5.38 8.42-5.61c.11-.25.11-.54 0-.79c-.1-.23-2.47-5.61-8.42-5.61c-3.53 0-5.8 1.89-7.08 3.48C5.4 7.56 3.28 6.99 2 6.99v2c.5 0 3 .18 3 3s-2.5 2.99-3.01 3ZM13.5 8c3.83 0 5.79 2.91 6.38 4c-.6 1.09-2.55 4-6.38 4s-5.79-2.92-6.38-4c.6-1.09 2.55-4 6.38-4"
+                />
+              </svg>
+            </span>
+            <p data-category="Seafood">Seafood</p>
+          </div>
+
+          <div class="categories_content_block">
+            <span class="iconify" data-category="Chicken">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 48 48"
+              >
+                <path d="M0 0h48v48H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                >
+                  <path
+                    d="M35.979 15.5a10.7 10.7 0 0 0-1.71-1.275l-1.466-.88a13.3 13.3 0 0 0-4.412-1.668l-.524-.096a27.1 27.1 0 0 1-8.051-2.855a2.792 2.792 0 1 0-2.965 3.396A22.8 22.8 0 0 1 21 17.647"
+                  />
+                  <path
+                    d="M11.307 25.02C11.045 25.3 8 28.65 8 32c0 3.5 1.558 5 3 6s3.72 2 5.61 2S28.5 41 33 40s5-2 7-4c1.081-1.081 1.882-2.602 2.39-3.77a22.5 22.5 0 0 0 1.175-3.502c.36-1.436.723-3.498.435-5.228c-.5-3-2-5-7-7.5c-4.604-2.302-8.647-1.212-9.258-1.025l-.161.054c-.8.283-7.265 2.596-10.01 4.471c-2.802 1.914-5.962 5.202-6.228 5.481z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M6.103 20.01a2.792 2.792 0 1 1 2.965-3.396a27.1 27.1 0 0 0 8.051 2.854l.524.097c1.559.287 3.053.852 4.412 1.668l1.466.879a10.7 10.7 0 0 1 2.602 2.197l.406.472a6.6 6.6 0 0 1 1.532 5.17l-.028.211a5.95 5.95 0 0 1-1.637 3.367l-.462.473a6.67 6.67 0 0 1-5.875 1.924a8.34 8.34 0 0 1-4.425-2.23l-.739-.714a9.3 9.3 0 0 1-1.532-1.935l-2.172-3.652l-.634-1.27a22.8 22.8 0 0 0-4.454-6.116"
+                  />
+                </g>
+              </svg>
+            </span>
+            <p data-category="Chicken">Chicken</p>
+          </div>
+
+          <div class="categories_content_block">
+            <span class="iconify" data-category="Veg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                >
+                  <path d="M12 21v-8" />
+                  <path d="M12 13c0 -5 -4 -8 -9 -8 0 5 4 8 9 8" />
+                  <path d="M12 13c0 -5 4 -8 9 -8 0 5 -4 8 -9 8" />
+                </g>
+              </svg>
+            </span>
+            <p data-category="Veg">Vegetarian</p>
+          </div>
+
+          <div class="categories_content_block">
+            <span class="iconify" data-category="Pasta">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M4 16.5V8H3V7h1V6H3V5h1V4H3V3h6c.5.03.95.24 1.34.63s.61.87.66 1.37h10v1H11c-.05.53-.27 1-.66 1.43S9.5 8.05 9 8H7v7.05c.05 0 .13-.01.24-.05s.2 0 .26 0q.84 0 1.92.42c.41-.92 1.11-1.74 2.11-2.42s2-1 3-1c1.53 0 2.83.53 3.89 1.59S20 15.95 20 17.5v.27c0 .13-.03.2-.03.23H3.14c.13-.5.41-1 .86-1.5m2-1.27V8H5v7.7c.5-.25.81-.4 1-.47M9 7V6H7v1zm0-3H7v1h2zM5 4v1h1V4zm0 2v1h1V6zM2 19h20l-2 2H4z"
+                />
+              </svg>
+            </span>
+            <p data-category="Pasta">Pastas</p>
+          </div>
+
+          <div class="categories_content_block">
+            <span class="iconify" data-category="misc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M2.442 15.385q0-2.187 2.064-3.209t4.552-1.022t4.552 1.022t2.063 3.209zm0 3.307v-1h13.231v1zM3.212 22q-.31 0-.54-.23t-.23-.54V21h13.231v.23q0 .31-.23.54t-.54.23zm14.461 0v-6.615q0-2.35-1.757-3.925q-1.758-1.576-4.16-2.064l-.429-3.012h4.615v-4h1v4h4.616l-1.452 14.162q-.056.621-.522 1.038q-.467.416-1.088.416z"
+                />
+              </svg>
+            </span>
+            <p data-category="misc">Snacks</p>
+          </div>
+
+          <div class="categories_content_block">
+            <span class="iconify" data-category="meats">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M16.4 13.7A6.5 6.5 0 1 0 6.28 6.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3"
+                  />
+                  <path
+                    d="m18.5 6l1.754 3.5a6.48 6.48 0 0 1-1.854 8.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"
+                  />
+                  <circle cx="12.5" cy="8.5" r="2.5" />
+                </g>
+              </svg>
+            </span>
+            <p data-category="meats">meats</p>
+          </div>
+
+          <div class="categories_content_block">
+            <span class="iconify" data-category="dessert">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linejoin="round"
+                    d="M3.539 17h7.512m7.512 0h2.504M12.535 5a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m0 0c.167-.5.9-1.6 2.5-2"
+                  />
+                  <path
+                    stroke-linejoin="round"
+                    d="M10.021 8.015c-5.95 2.249-8.349 3.287-7.985 4.031c1.98.936 5.615.695 9.335.555c1.024-.038 2.035.47 2.267 1.477c.164.711.207 1.332.53 1.726c.186.226.501.302.783.229c.76-.2 1.074-1.049 1.45-2.54c.073-.29.177-.603.458-.7c1.26-.438 5.14.527 5.14-1.25c-.063-1.85-.737-3.003-2.9-4.718a3.5 3.5 0 0 0-2.456-.754c-.925.074-1.356.195-1.631.432"
+                  />
+                  <path
+                    d="m2.013 11.993l.976 4.305c.499 2.254.749 3.381 1.571 4.042c.823.66 1.977.66 4.286.66h8.577c1.723 0 2.584 0 3.155-.518c.572-.518.656-1.375.826-3.09l.59-5.758"
+                  />
+                </g>
+              </svg>
+            </span>
+            <p data-category="dessert">desserts</p>
+          </div>
+        </div>
+      </section>
+
+      <!--image section-->
+      <section class="image_section">
+        <div class="image_section_controller">
+          <div class="image_section_box">
+            <h4>In the kitchen</h4>
+            <p>lore ipsum dolor sit amet something</p>
+          </div>
+        </div>
+      </section>
+
+      <!--content-area(in the kitchen)-->
+      <section class="content-area">
+        <!-- Main Section Title -->
+        <h2 class="kitchen_headline">IN THE KITCHEN</h2>
+
+        <div class="kitchen_grid">
+          <!-- Card 1 -->
+          <div class="image_section_box">
+            <div class="kitchen_card_box">
+              <span class="kitchen_subtitle"><span class="orange_line">|</span> In the kitchen</span>
+              <h4>HOW TO PLATE AS A PRO</h4>
+              <p>Big brawl in kitchen. Who takes it? Winner gets to take home the desserts! Losers can wave goodbye!</p>
+              <button><a href="#">PLATING</a></button>
+            </div>
+            <div class="kitchen_card_bg kitchen_card_bg_1"></div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="image_section_box">
+            <div class="kitchen_card_bg kitchen_card_bg_2"></div>
+            <div class="kitchen_card_box">
+              <span class="kitchen_subtitle"><span class="orange_line">|</span> In the kitchen</span>
+              <h4>RECIPES ARE FOR...</h4>
+              <p>Big brawl in kitchen. Who takes it? Winner gets to take home the desserts! Losers can wave goodbye! esf</p>
+              <button><a href="#">RECIPE</a></button>
+            </div>
+            
+          </div>
+
+          <!-- Card 3 -->
+          <div class="image_section_box">
+            <div class="kitchen_card_box">
+              <span class="kitchen_subtitle"><span class="orange_line">|</span> In the kitchen</span>
+              <h4>MEATS - HOW TO BASTE</h4>
+              <p>Big brawl in kitchen. Who takes it? Winner gets to take home the desserts! Very scrumptious!</p>
+              <button><a href="#">GUIDES</a></button>
+            </div>
+            <div class="kitchen_card_bg kitchen_card_bg_3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--footer-->
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
