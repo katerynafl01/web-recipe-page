@@ -26,3 +26,143 @@
           </ul>
         </div>
       </nav>
+
+<!-- Profile & Favourites Main Content -->
+    <main class="profile-page">
+      <!-- User Avatar & Name -->
+      <div class="profile-header">
+        <a href="#saved-recipes" class="profile-avatar" title="Edit Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
+          </svg>
+        </a>
+        <h1 class="profile-name">
+          Dominic.V <span class="profile-star">★</span>
+        </h1>
+      </div>
+
+      <!-- Clickable Search Bar -->
+      <form class="profile-search" action="recipe-detail.html" method="get">
+        <input type="text" name="q" placeholder="Search" aria-label="Search saved recipes">
+        <button type="submit" aria-label="Submit search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+
+      <!-- Saved Recipes Section -->
+      <section class="profile-section" id="saved-recipes">
+        <h2 class="profile-section_title">SAVED RECIPES (24)</h2>
+
+        <a href="recipe-detail.html" class="saved-recipe-card">
+          <div class="saved-recipe-card_img">
+            <img src="https://picsum.photos/500/350?random=12" alt="Boozy Brown Lentil Soup">
+          </div>
+
+          <div class="saved-recipe-card_info">
+            <h3>
+              BOOZY BROWN<br>
+              <strong>LENTIL SOUP</strong>
+            </h3>
+
+            <div class="saved-recipe-card_rating">
+              <span class="stars">★★★★<span class="half-star">★</span></span>
+              <span class="rating-count">4.6 (124)</span>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- My Collection Section -->
+      <section class="profile-section" id="my-collection">
+        <h2 class="profile-section_title">MY COLLECTION (4)</h2>
+
+        <div class="collection-box">
+          <!-- Three-dots Options Button -->
+          <a href="#my-collection" class="collection-more-btn" title="Collection options">•••</a>
+
+          <div class="collection-list">
+            <a href="recipe-detail.html" class="collection-item">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+              </svg>
+              <span>QUICK BREAKFAST (4)</span>
+            </a>
+
+            <a href="recipe-detail.html" class="collection-item">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+              </svg>
+              <span>SOUP &amp; STEWS (0)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div> <!-- End of .container -->
+
+  <!-- Universal Orange Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Left Side: Socials & Navigation -->
+      <div class="footer-left">
+        <ul class="footer-socials">
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                <path d="M0 0h16v16H0z" fill="none" />
+                <path fill="currentColor" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104l.022.26l.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105l-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006l-.087-.004l-.171-.007l-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103l.003-.052l.008-.104l.022-.26l.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007l.172-.006l.086-.003l.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+              </svg>
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="currentColor" fill-rule="evenodd" d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89" clip-rule="evenodd" />
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                <path d="M0 0h16v16H0z" fill="none" />
+                <path fill="currentColor" d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+              </svg>
+              Facebook
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe-detail.html">Recipe</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Center Vertical Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Right Side: Spotify Links & Renewable Energy Badge -->
+      <div class="footer-right">
+        <div class="spotify-links">
+          <a href="https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN" target="_blank" class="spotify-url">
+            https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN
+          </a>
+          <a href="https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK" target="_blank" class="spotify-url">
+            https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK
+          </a>
+        </div>
+
+        <div class="eco-badge">
+          <span class="eco-icon">♻</span> Etsy is powered by 100% renewable electricity.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
