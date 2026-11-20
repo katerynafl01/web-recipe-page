@@ -1929,3 +1929,155 @@ nav {
   margin: 0;
   color: #444444;
 }
+
+/* Mobile version */
+@media (max-width: 768px) {
+  .menu-container,
+  .hero-container,
+  .todays_recipes,
+  .todays_recipes_content,
+  .categories,
+  .image_section_controller,
+  .recipe-detail,
+  .search-page-container {
+    width: 92%;
+    max-width: 100%;
+  }
+
+  /* Navigation */
+  .navigation {
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .menu-container ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero section */
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text {
+    grid-column: 1;
+    margin-top: 150px;
+  }
+
+  .hero-search {
+    grid-column: 1;
+  }
+
+  /* Today's recipes & Categories */
+  .todays_recipes {
+    grid-template-rows: auto auto;
+  }
+
+  .todays_recipes_content {
+    grid-template-columns: 1fr;
+  }
+
+  .categories_content {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .image_section_box {
+    grid-column: 1 / -1;
+  }
+
+  /* Recipe detail page */
+  .recipe-detail_header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .recipe-detail_info,
+  .recipe-detail_image {
+    grid-column: 1;
+    justify-content: center;
+  }
+
+  .recipe-detail_image img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .recipe-detail_ingredients_cols {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-detail_steps_list {
+    max-width: 100%;
+  }
+
+  .recipe-detail_bottom {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    gap: 30px;
+  }
+
+  .recipe-detail_vertical_steps,
+  .recipe-detail_full_ingredients {
+    grid-column: 1;
+  }
+
+  .recipe-detail_vertical_steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .recipe-detail_vertical_steps span {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .recipe-detail_vertical_steps span.extra-space {
+    margin-bottom: 0;
+  }
+
+  /* Search page */
+  .search-top-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .filter-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Profile page */
+  .saved-recipe-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .saved-recipe-card_img {
+    width: 100%;
+    height: 180px;
+  }
+
+  /* NutriSafe page */
+  .nutrisafe-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .nutrisafe-title {
+    font-size: 44px;
+  }
+
+  .nutrisafe-filters {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .nutrisafe-grid {
+    grid-template-columns: 1fr;
+  }
+}
